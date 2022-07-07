@@ -11,7 +11,7 @@ ExecStart=/home/ubuntu/django_master/venv_django/bin/gunicorn \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
     --bind unix:/home/ubuntu/django_master/gunicorn/django.sock \
-    django_master.wsgi:application
+    django_learn.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
